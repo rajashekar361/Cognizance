@@ -1,8 +1,8 @@
 import re,csv
 file= open('onelinefile.txt') #reading the txt file
 for i in file:
-        num = re.findall(r'[+-]?[0-9]+\.[0-9]+', i) #for float valuesa
-        alpha = re.findall(r'[a-zA-Z]+', i) #for strings
+        num = re.findall(r'[+-]?[0-9]+\.[0-9]+', i) #for searching  float values
+        alpha = re.findall(r'[a-zA-Z]+', i) #for searching strings
         j = 0
         for p in range(len(num)):
             with open('filename2.csv', 'a', newline='') as file:
